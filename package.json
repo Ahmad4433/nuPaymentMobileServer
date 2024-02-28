@@ -4,9 +4,9 @@
     "main": "index.js",
     "scripts": {
         "start": "node index.js",
-        "dev": "node index.js",
+      
         "test": "nyc _mocha --timeout 10000 --exit --report lcovonly -- -R spec",
-        "lint": "eslint --fix --config .eslintrc.json \"**/*.js\""
+      
     },
     "dependencies": {
         "axios": "^1.6.7",
