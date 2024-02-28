@@ -1,11 +1,13 @@
 {
     "name": "directoappBackend",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "app.js",
     "scripts": {
         "start": "node index.js",
       
+        "dev": "node index.js",
         "test": "nyc _mocha --timeout 10000 --exit --report lcovonly -- -R spec",
+        "lint": "eslint --fix --config .eslintrc.json \"**/*.js\""
       
     },
     "dependencies": {
