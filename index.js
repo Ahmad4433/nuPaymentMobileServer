@@ -34,6 +34,13 @@ app.use((req, res, next) => {
 
 app.use(cors());
 
+app.options('*', cors());
+
+
+app.get('/', (req, res) => {
+    res.send('Server is running');
+  });
+
 connection();
 
 // moralis();
