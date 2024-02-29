@@ -49,7 +49,7 @@ const deleteFile = (existingFile) => {
 }
 
 const isImageValid = (mimetype) => {
-    const availableImageType = ["image/jpeg", "image/png", "image/webp"];
+    const availableImageType = ["image/jpeg", "image/png", "image/webp,image/jpg"];
     return availableImageType.includes(mimetype);
 };
 
