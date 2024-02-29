@@ -48,6 +48,7 @@ const userSchema = new Schema(
       type: String,
       default: USER_TYPES.Shopper,
     },
+
     otp: {
       type: String,
     },
