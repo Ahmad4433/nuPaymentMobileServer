@@ -9,9 +9,10 @@ const onCreateUser = async (req, res) => {
 
         const user = await User.createUser(req.body, req.files.image);
   
-        const protocol = req.protocol
-        const host = req.get('host')
-        const domain =`${protocol}://${host}/`
+        // const protocol = req.protocol
+        // const host = req.get('host')
+        // const domain =`${protocol}://${host}/`
+        const domain = 'https://nu-payment-mobile-server.vercel.app/'
             
       if(user){
         const response = await axios.post(
