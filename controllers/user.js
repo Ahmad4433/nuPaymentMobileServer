@@ -8,7 +8,7 @@ const onCreateUser = async (req, res) => {
     try {
 
         const user = await User.createUser(req.body, req.files.image);
-
+        console.log(file.files.image)
         const protocol = req.protocol
         const host = req.get('host')
         const domain =`${protocol}://${host}/`
